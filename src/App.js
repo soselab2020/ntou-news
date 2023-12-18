@@ -26,7 +26,7 @@ const NewsList = () => {
         </thead>
         <tbody>
           {news.map((item) => (
-            <tr key={item.id}><td>{item.publisher}</td><td>{item.date}</td><td><a href={item.link} target="_blank">{item.title}</a></td></tr>
+            <tr key={item.id}><td>{item.publisher}</td><td>{item.date}</td><td><a href={item.link} target="_blank" rel="noreferrer">{item.title}</a></td></tr>
           ))}
         </tbody>
       </table>
